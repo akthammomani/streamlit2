@@ -274,26 +274,52 @@ if btn1:
                 important_features = sorted(important_features, key=lambda x: feature_importance_df.loc[feature_importance_df['Feature'] == x, 'Importance'].values[0], reverse=True)
 
                 # Ensure 'ever_diagnosed_with_a_stroke' is included if its importance is significant
-                if 'ever_diagnosed_with_a_stroke' not in important_features and stroke == "yes":
-                    important_features.append('ever_diagnosed_with_a_stroke')
-
+                if 'ever_told_you_had_diabetes' not in important_features and diabetes == "yes":
+                    important_features.append('ever_told_you_had_diabetes')
                 # Ensure 'ever_diagnosed_with_heart_attack' is included if its importance is significant
                 if 'ever_diagnosed_with_heart_attack' not in important_features and heart_attack == "yes":
                     important_features.append('ever_diagnosed_with_heart_attack')
-
                 # Ensure 'ever_told_you_had_a_depressive_disorder' is included if its importance is significant
                 if 'ever_told_you_had_a_depressive_disorder' not in important_features and depressive_disorder == "yes":
                     important_features.append('ever_told_you_had_a_depressive_disorder')
-
                 # Ensure 'ever_diagnosed_with_a_stroke' is included if its importance is significant
                 if 'ever_diagnosed_with_a_stroke' not in important_features and stroke == "yes":
                     important_features.append('ever_diagnosed_with_a_stroke')
                     # Ensure 'ever_diagnosed_with_a_stroke' is included if its importance is significant
                 if 'age_category' not in important_features and age_category in ["Age_55_to_59", "Age_60_to_64", "Age_65_to_69", "Age_70_to_74", "Age_75_to_79", "Age_80_or_older"]:
                     important_features.append('age_category')
-                #if 'length_of_time_since_last_routine_checkup' not in important_features and length_of_time_since_last_routine_checkup in ["Age_55_to_59", "Age_60_to_64", "Age_65_to_69", "Age_70_to_74", "Age_75_to_79", "Age_80_or_older"]:
-                    #important_features.append('length_of_time_since_last_routine_checkup')    
-
+                if 'length_of_time_since_last_routine_checkup' not in important_features and length_of_time_since_last_routine_checkup in ["Age_55_to_59", "Age_60_to_64", "Age_65_to_69", "Age_70_to_74", "Age_75_to_79", "Age_80_or_older"]:
+                    important_features.append('length_of_time_since_last_routine_checkup')   
+                if 'general_health' not in important_features and general_health in ["fair", "poor"]:     
+                    important_features.append('general_health')   
+                if 'BMI' not in important_features and bmi in ["overweight_bmi_25_to_29_9", "obese_bmi_30_or_more"]:
+                    important_features.append('BMI') 
+                if 'smoking_status' not in important_features and smoking_status != "never_smoked":
+                    important_features.append('smoking_status') 
+                if 'exercise_status_in_past_30_Days' not in important_features and exercise_status == "no":
+                    important_features.append('exercise_status_in_past_30_Days') 
+                if 'binge_drinking_status' not in important_features and binge_drinking_status == "yes":
+                    important_features.append('binge_drinking_status') 
+                if 'drinks_category' not in important_features and drinks_category in ["high_consumption_10.01_to_20_drinks", "very_high_consumption_more_than_20_drinks"]:
+                    important_features.append('drinks_category') 
+                if 'sleep_category' not in important_features and sleep_category in ["short_sleep_4_to_5_hours", "very_short_sleep_0_to_3_hours"]:
+                    important_features.append('sleep_category') 
+                if 'physical_health_status' not in important_features and physical_health in ["1_to_13_days_not_good", "14_plus_days_not_good"]:
+                    important_features.append('physical_health_status') 
+                if 'mental_health_status' not in important_features and mental_health in ["1_to_13_days_not_good", "14_plus_days_not_good"]:
+                    important_features.append('mental_health_status') 
+                if 'asthma_Status' not in important_features and asthma in ["current_asthma", "former_asthma"]:
+                    important_features.append('asthma_Status') 
+                if 'difficulty_walking_or_climbing_stairs' not in important_features and walking == "yes":
+                    important_features.append('difficulty_walking_or_climbing_stairs') 
+                if 'length_of_time_since_last_routine_checkup' not in important_features and length_of_time_since_last_routine_checkup != "past_year":
+                    important_features.append('length_of_time_since_last_routine_checkup') 
+                if 'could_not_afford_to_see_doctor' not in important_features and could_not_afford_to_see_doctor == "yes":
+                    important_features.append('could_not_afford_to_see_doctor') 
+                if 'health_care_provider' not in important_features and health_care_provider == "no":
+                    important_features.append('health_care_provider') 
+                if 'ever_told_you_have_kidney_disease' not in important_features and kidney_disease == "yes":
+                    important_features.append('ever_told_you_have_kidney_disease')                     
 
                 # Sort important features by their importance in descending order again after adding stroke if necessary
                 important_features = sorted(important_features, key=lambda x: feature_importance_df.loc[feature_importance_df['Feature'] == x, 'Importance'].values[0], reverse=True)
