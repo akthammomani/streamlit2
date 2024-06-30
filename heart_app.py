@@ -23,6 +23,20 @@ data['heart_disease'] = data['heart_disease'].apply(lambda x: 1 if x == 'yes' el
 icon = Image.open("heart_disease.jpg")
 st.set_page_config(layout='wide', page_title='AI-Powered Heart Disease Assessment', page_icon=icon)
 
+# Custom CSS to hide GitHub link and other elements
+st.markdown(
+    """
+    <style>
+    .css-1jc7ptx, .e1ewe7hr3, .viewerBadge_container__1QSob,
+    .styles_viewerBadge__1yB5_, .viewerBadge_link__1S137,
+    .viewerBadge_text__1JaDK {
+        display: none;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 # Custom CSS
 def local_css(file_name):
     with open(file_name) as f:
