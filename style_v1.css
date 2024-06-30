@@ -30,7 +30,7 @@ button[type=submit]:hover {
 }
 
 .flex-item {
-    background-color: #FAEBD7; /* Background color */
+    background-color: #FAEBD7 !important; /* Background color */
     color: black; /* Black text color */
     padding: 20px; /* Some padding */
     border-radius: 15px; /* Rounded borders */
@@ -43,11 +43,11 @@ button[type=submit]:hover {
 }
 
 .flex-item.introduction {
-    width: 35%; /* Set width to 35% */
+    width: 35% !important; /* Set width to 35% */
 }
 
 .flex-item.how-it-works {
-    width: 65%; /* Set width to 65% */
+    width: 65% !important; /* Set width to 65% */
 }
 
 .flex-item h2, .flex-item h3 {
@@ -66,7 +66,7 @@ body {
 }
 
 .stButton>button {
-    background-color: #FAEBD7;
+    background-color: #FAEBD7 !important; /* Change button background color */
     color: black;
     border: none;
     padding: 10px 20px;
@@ -75,7 +75,7 @@ body {
 }
 
 .stButton>button:hover {
-    background-color: #0056b3;
+    background-color: #0056b3 !important; /* Change button hover background color */
 }
 
 .stMarkdown h2 {
@@ -83,7 +83,7 @@ body {
 }
 
 .stSelectbox select {
-    border: 1px solid #FAEBD7;
+    border: 1px solid #FAEBD7 !important;
 }
 
 .stSelectbox select:focus {
@@ -92,7 +92,7 @@ body {
 }
 
 textarea {
-    border: 1px solid #FAEBD7;
+    border: 1px solid #FAEBD7 !important;
 }
 
 textarea:focus {
