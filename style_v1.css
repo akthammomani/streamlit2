@@ -30,7 +30,7 @@ button[type=submit]:hover {
 }
 
 .flex-item {
-    background-color: #ebd2b9; /* Background color */
+    background-color: #FAEBD7; /* Background color */
     color: black; /* Black text color */
     padding: 20px; /* Some padding */
     border-radius: 15px; /* Rounded borders */
@@ -66,7 +66,7 @@ body {
 }
 
 .stButton>button {
-    background-color: #ebd2b9;
+    background-color: #FAEBD7;
     color: black;
     border: none;
     padding: 10px 20px;
@@ -83,7 +83,7 @@ body {
 }
 
 .stSelectbox select {
-    border: 1px solid #ebd2b9;
+    border: 1px solid #FAEBD7;
 }
 
 .stSelectbox select:focus {
@@ -92,7 +92,7 @@ body {
 }
 
 textarea {
-    border: 1px solid #ebd2b9;
+    border: 1px solid #FAEBD7;
 }
 
 textarea:focus {
