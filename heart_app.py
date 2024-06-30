@@ -8,6 +8,7 @@ from lightgbm import LGBMClassifier
 import category_encoders as ce
 from imblearn.ensemble import EasyEnsembleClassifier
 import shap
+import plotly.express as px
 
 # Load the pickled model and encoder
 with open('best_model.pkl', 'rb') as model_file:
