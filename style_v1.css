@@ -1,9 +1,9 @@
 /* Hide the GitHub link in the Streamlit header */
-header [title="View source on GitHub"] {
+header .viewerBadge_container__1QSob {
     display: none;
 }
 
-/* Style inputs with type="text", type="email" and textareas */
+/* Additional custom styles */
 input[type=text], input[type=email], textarea {
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */ 
@@ -15,7 +15,6 @@ input[type=text], input[type=email], textarea {
     resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
-/* Style the submit button with a specific background color etc */
 button[type=submit] {
     background-color: #04AA6D;
     color: white;
@@ -25,14 +24,10 @@ button[type=submit] {
     cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
 button[type=submit]:hover {
     background-color: #45a049;
 }
 
-/* Custom styles for the Streamlit app */
-
-/* Style for the rounded boxes */
 .flex-container {
     display: flex;
     gap: 20px;
@@ -69,14 +64,12 @@ button[type=submit]:hover {
     flex-grow: 1;
 }
 
-/* General body styling */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f0f2f6;
     color: #333;
 }
 
-/* Style for Streamlit buttons */
 .stButton>button {
     background-color: #ebd2b9;
     color: black;
@@ -90,12 +83,10 @@ body {
     background-color: #0056b3;
 }
 
-/* Style for Markdown headers */
 .stMarkdown h2 {
     color: #000000;
 }
 
-/* Style for select boxes */
 .stSelectbox select {
     border: 1px solid #ebd2b9;
 }
@@ -105,7 +96,6 @@ body {
     box-shadow: 0 0 5px #0056b3;
 }
 
-/* Style for text areas */
 textarea {
     border: 1px solid #ebd2b9;
 }
