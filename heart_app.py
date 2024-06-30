@@ -26,11 +26,8 @@ st.set_page_config(layout='wide', page_title='AI-Powered Heart Disease Assessmen
 st.markdown(
     """
     <style>
-    .viewerBadge_container__1QSob, /* Container for the badge */
-    .viewerBadge_link__1S137, /* Link element within the badge */
-    .viewerBadge_text__1JaDK, /* Text element within the badge */
-    .css-1lsmgbg, /* General class applied to the badge */
-    .css-1vbd788 { /* Another class potentially applied to the badge */
+    /* Hide the GitHub link in the Streamlit header */
+    a[href*="github.com"] {
         display: none !important;
     }
     </style>
