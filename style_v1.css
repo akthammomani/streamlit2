@@ -1,11 +1,3 @@
-/* Hide the GitHub link in the Streamlit header */
-.viewerBadge_container__1QSob,
-.viewerBadge_link__1S137,
-.viewerBadge_text__1JaDK,
-.css-1lsmgbg {
-    display: none !important;
-}
-
 /* Additional custom styles */
 input[type=text], input[type=email], textarea {
     width: 100%; /* Full width */
