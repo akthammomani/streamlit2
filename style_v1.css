@@ -1,5 +1,5 @@
 /* Hide the GitHub link in the Streamlit header */
-header .viewerBadge_container__1QSob {
+header [title="View source on GitHub"] {
     display: none;
 }
 
