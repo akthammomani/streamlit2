@@ -1,3 +1,8 @@
+/* Hide the GitHub link in the Streamlit header */
+header [title="View source on GitHub"] {
+    display: none;
+}
+
 /* Style inputs with type="text", type="email" and textareas */
 input[type=text], input[type=email], textarea {
     width: 100%; /* Full width */
