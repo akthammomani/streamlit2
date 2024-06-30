@@ -27,7 +27,12 @@ st.markdown(
     """
     <style>
     /* Hide the GitHub link in the Streamlit header */
-    a[href*="github.com"] {
+    .viewerBadge_container__1QSob,
+    .viewerBadge_link__1S137,
+    .viewerBadge_text__1JaDK,
+    .css-1lsmgbg,
+    .css-1vbd788,
+    [title="View source on GitHub"] {
         display: none !important;
     }
     </style>
