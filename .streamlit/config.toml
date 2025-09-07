@@ -2,3 +2,6 @@
 base="light"
 backgroundColor="#fef8ef"
 secondaryBackgroundColor="#FAEBD7"
+
+[server]
+fileWatcherType = "none"
