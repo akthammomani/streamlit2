@@ -7,7 +7,7 @@ secondaryBackgroundColor="#FAEBD7"
 fileWatcherType = "none"
 
 [client]
-toolbarMode = "viewer"
+toolbarMode = "minimal"
 [ui]
 hideTopBar = true
 
