@@ -5,3 +5,9 @@ secondaryBackgroundColor="#FAEBD7"
 
 [server]
 fileWatcherType = "none"
+
+[client]
+toolbarMode = "viewer"
+[ui]
+hideTopBar = true
+
