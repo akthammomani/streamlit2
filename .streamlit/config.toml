@@ -3,11 +3,11 @@ base="light"
 backgroundColor="#fef8ef"
 secondaryBackgroundColor="#FAEBD7"
 
-[server]
-fileWatcherType = "none"
-
 [client]
 toolbarMode = "minimal"
 [ui]
 hideTopBar = true
+
+[server]
+fileWatcherType = "none"
 
